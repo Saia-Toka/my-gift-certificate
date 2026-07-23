@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Подарочный сертификат — визитка</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <video id="bgvideo" class="bgvideo" autoplay muted loop playsinline poster="../certificate_daisy.svg">
+    <source src="assets/518254_Green_Meadow_1280x720.mp4" type="video/mp4">
+    Ваш браузер не поддерживает видео-подложку.
+  </video>
+
+  <div class="overlay"></div>
+
+  <main class="card-wrap">
+    <section class="card">
+      <div class="left">
+        <h1 class="title">Сертификат на День Рождения</h1>
+        <p class="subtitle">Подарок — выберите то, что нравится</p>
+
+        <div class="amount">4 000 ₽</div>
+
+        <div class="meta">
+          <div class="code">
+            <label>Код активации</label>
+            <div class="code-box">WR6F-FN3D-3MF</div>
+          </div>
+
+          <div class="date">
+            <label>Активировать до</label>
+            <div class="date-box">22.07.2027</div>
+          </div>
+        </div>
+
+        <div class="links">
+          <a href="https://www.ozon.ru/my/codes" target="_blank">Активировать на Ozon</a>
+          <a href="https://www.ozon.ru/my/chat?__rr=1" target="_blank">Чат поддержки</a>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="foot">
+      <small>Ссылка на инструкцию по сертификатам: <a href="https://www.ozon.ru/my/account" target="_blank">аккаунт</a></small>
+    </footer>
+  </main>
+
+  <script>
+    // small readiness helper: if video fails (403), dim background and show poster clearly
+    const v = document.getElementById('bgvideo');
+    v.addEventListener('error', () => {
+      document.body.classList.add('no-video');
+      console.warn('Background video failed to load.');
+    });
+  </script>
+</body>
+</html>

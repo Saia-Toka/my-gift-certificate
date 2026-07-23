@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2480" height="1748" viewBox="0 0 2480 1748">
+  <style>
+    .bg { fill: #f7fbff }
+    .panel { fill: #ffffff; stroke: #e6eefb; stroke-width:4 }
+    .title { font-family: 'Inter', Arial, sans-serif; font-weight:800; fill:#0b57ff }
+    .subtitle { font-family: 'Inter', Arial, sans-serif; fill:#233043 }
+    .amount { fill:#ffffff; font-weight:800 }
+    .badge { fill:#0b57ff; rx:38 }
+    .code { fill:#1f2937; font-weight:700 }
+    .small { fill:#6b7280 }
+  </style>
+
+  <rect class="bg" width="100%" height="100%"/>
+
+  <!-- white panel -->
+  <rect class="panel" x="120" y="120" width="2240" height="1508" rx="30"/>
+
+  <!-- Left decorative daisies -->
+  <g transform="translate(180,220)">
+    <!-- big daisy -->
+    <g transform="translate(120,120)">
+      <circle cx="300" cy="300" r="120" fill="#ffd84d" />
+      <!-- petals -->
+      <g fill="#ffffff">
+        <ellipse rx="60" ry="140" cx="300" cy="80" transform="rotate(0 300 300)" />
+        <ellipse rx="60" ry="140" cx="300" cy="80" transform="rotate(45 300 300)" />
+        <ellipse rx="60" ry="140" cx="300" cy="80" transform="rotate(90 300 300)" />
+        <ellipse rx="60" ry="140" cx="300" cy="80" transform="rotate(135 300 300)" />
+        <ellipse rx="60" ry="140" cx="300" cy="80" transform="rotate(180 300 300)" />
+        <ellipse rx="60" ry="140" cx="300" cy="80" transform="rotate(225 300 300)" />
+        <ellipse rx="60" ry="140" cx="300" cy="80" transform="rotate(270 300 300)" />
+        <ellipse rx="60" ry="140" cx="300" cy="80" transform="rotate(315 300 300)" />
+      </g>
+    </g>
+
+    <!-- small daisy cluster -->
+    <g transform="translate(20,560) scale(0.6)">
+      <circle cx="300" cy="300" r="80" fill="#ffd84d" />
+      <g fill="#ffffff">
+        <ellipse rx="40" ry="90" cx="300" cy="60" transform="rotate(0 300 300)" />
+        <ellipse rx="40" ry="90" cx="300" cy="60" transform="rotate(60 300 300)" />
+        <ellipse rx="40" ry="90" cx="300" cy="60" transform="rotate(120 300 300)" />
+        <ellipse rx="40" ry="90" cx="300" cy="60" transform="rotate(180 300 300)" />
+        <ellipse rx="40" ry="90" cx="300" cy="60" transform="rotate(240 300 300)" />
+        <ellipse rx="40" ry="90" cx="300" cy="60" transform="rotate(300 300 300)" />
+      </g>
+    </g>
+  </g>
+
+  <!-- Title -->
+  <text x="520" y="240" font-size="120" class="title">СЕРТИФИКАТ</text>
+
+  <!-- Subtitle / occasion -->
+  <text x="520" y="330" font-size="36" class="subtitle">Подарочный сертификат — с любовью к дню рождения</text>
+
+  <!-- Amount badge -->
+  <g transform="translate(520,380)">
+    <rect class="badge" width="520" height="160" rx="36" />
+    <text x="260" y="110" font-size="84" text-anchor="middle" class="amount">4 000 ₽</text>
+  </g>
+
+  <!-- Right area: code block and QR placeholder -->
+  <g transform="translate(520,580)">
+    <rect x="0" y="0" width="1200" height="520" rx="18" fill="#fff" stroke="#eef6ff" />
+    <text x="36" y="64" font-size="36" class="subtitle">Код активации</text>
+    <rect x="36" y="84" width="560" height="80" rx="18" fill="#f3f7ff" />
+    <text x="324" y="140" font-size="34" text-anchor="middle" class="code">WR6F-FN3D-3MF</text>
+
+    <text x="36" y="220" font-size="36" class="subtitle">Активировать до</text>
+    <rect x="36" y="240" width="300" height="64" rx="14" fill="#f3f7ff" />
+    <text x="186" y="288" font-size="28" text-anchor="middle" class="code">22.07.2027</text>
+
+    <g transform="translate(780,36)">
+      <rect x="0" y="0" width="360" height="240" rx="12" fill="#e8f0ff" />
+      <text x="180" y="132" font-size="48" text-anchor="middle" class="subtitle">QR</text>
+    </g>
+
+    <text x="36" y="340" font-size="20" class="small">Ссылки для активации и поддержки:</text>
+    <text x="36" y="370" font-size="20" class="small">https://www.ozon.ru/my/codes</text>
+    <text x="36" y="395" font-size="20" class="small">https://www.ozon.ru/my/account</text>
+  </g>
+
+  <!-- Footer note -->
+  <text x="520" y="1200" font-size="18" class="small">Персонализируйте: вставьте имя получателя, подпись и дату. Экспортируйте из Inkscape или Figma в PDF для печати.</text>
+
+</svg>
