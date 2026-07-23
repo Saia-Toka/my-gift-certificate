@@ -15,7 +15,8 @@ body.no-video .bgvideo{display:none}
 .overlay{position:fixed;inset:0;background:rgba(255,255,255,0.08);z-index:1}
 
 .card-wrap{position:relative;z-index:2;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:48px}
-.card{width:min(780px,94%);display:flex;flex-wrap:wrap;gap:32px;background:rgba(255,255,255,0);border-radius:22px;box-shadow:0 24px 72px rgba(15,23,42,0.14);padding:38px;border:1px solid rgba(255,255,255,0.45);backdrop-filter:blur(10px)}
+.card{position:relative;width:min(780px,94%);display:flex;flex-wrap:wrap;gap:32px;background:rgba(255,255,255,0);border-radius:22px;box-shadow:0 24px 72px rgba(15,23,42,0.14);padding:38px;border:1px solid rgba(255,255,255,0.45);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);overflow:hidden}
+.card::before{content:'';position:absolute;inset:0;background:rgba(255,255,255,0.12);pointer-events:none;border-radius:22px;}
 .left{flex:1;min-width:280px}
 .right{width:360px;min-width:280px;display:flex;align-items:center;justify-content:center}
 .preview{max-width:100%;height:auto;border-radius:14px;border:1px solid rgba(230,238,251,0.9)}
